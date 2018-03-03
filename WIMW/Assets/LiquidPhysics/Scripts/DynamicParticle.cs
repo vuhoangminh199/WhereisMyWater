@@ -1,15 +1,6 @@
 using UnityEngine;
 using System.Collections;
-/// <summary>
-/// Dynamic particle.
-/// 
-/// The dynamic particle is the backbone of the liquids effect. Its a circle with physics with 3 states, each state change its physic properties and its sprite color ( so the shader can separate wich particle is it to draw)
-/// The particles scale down and die, and have a scale  effect towards their velocity.
-/// 
-/// Visit: www.codeartist.mx for more stuff. Thanks for checking out this example.
-/// Credit: Rodrigo Fernandez Diaz
-/// Contact: q_layer@hotmail.com
-/// </summary>
+
 
 public class DynamicParticle : MonoBehaviour {	
 	public enum STATES{WATER,GAS,LAVA,NONE}; //The 3 states of the particle
@@ -29,15 +20,17 @@ public class DynamicParticle : MonoBehaviour {
 		if(newState!=currentState){ //Only change to a different state
 			switch(newState){
 				case STATES.WATER:													
-					rigidbody2D.gravityScale=1.0f; // To simulate Water density
+			//		rigidbody2D.gravityScale=1.0f; // To simulate Water density
+					gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 				break;
 				case STATES.GAS:		
 					particleLifeTime=particleLifeTime/2.0f;	// Gas lives the time the other particles
-					rigidbody2D.gravityScale=0.0f;// To simulate Gas density
+					//rigidbody2D.gravityScale=0.0f;// To simulate Gas density
+					gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 					gameObject.layer=LayerMask.NameToLayer("Gas");// To have a different collision layer than the other particles (so gas doesnt rises up the lava but still collides with the wolrd)
 				break;					
 				case STATES.LAVA:
-					rigidbody2D.gravityScale=0.3f; // To simulate the lava density
+					gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
 				break;	
 				case STATES.NONE:
 					Destroy(gameObject);
@@ -46,14 +39,15 @@ public class DynamicParticle : MonoBehaviour {
 			if(newState!=STATES.NONE){
 				currentState=newState;
 				startTime=Time.time;//Reset the life of the particle on a state change
-				rigidbody2D.velocity=new Vector2();	// Reset the particle velocity	
+				//rigidbody2D.velocity=new Vector2();	// Reset the particle velocity	
+				gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2();
 				currentImage.SetActive(false);
 				currentImage=particleImages[(int)currentState];
 				currentImage.SetActive(true);
 			}
 		}		
 	}
-	void Update () {
+ 	 void Update () {
 		switch(currentState){
 			case STATES.WATER: //Water and lava got the same behaviour
 				MovementAnimation(); 
@@ -64,8 +58,8 @@ public class DynamicParticle : MonoBehaviour {
 				ScaleDown();
 			break;
 			case STATES.GAS:
-				if(rigidbody2D.velocity.y<50){ //Limits the speed in Y to avoid reaching mach 7 in speed
-					rigidbody2D.AddForce (new Vector2(0,GAS_FLOATABILITY)); // Gas always goes upwards
+				if(gameObject.GetComponent<Rigidbody2D>().velocity.y<50){ //Limits the speed in Y to avoid reaching mach 7 in speed
+					gameObject.GetComponent<Rigidbody2D>().AddForce (new Vector2(0,GAS_FLOATABILITY)); // Gas always goes upwards
 				}
 				ScaleDown();
 			break;
@@ -75,8 +69,8 @@ public class DynamicParticle : MonoBehaviour {
 	// This scales the particle image acording to its velocity, so it looks like its deformable... but its not ;)
 	void MovementAnimation(){
 		Vector3 movementScale=new Vector3(1.0f,1.0f,1.0f);//Tamaño de textura no de metaball			
-		movementScale.x+=Mathf.Abs(rigidbody2D.velocity.x)/30.0f;
-		movementScale.z+=Mathf.Abs(rigidbody2D.velocity.y)/30.0f;
+		 movementScale.x+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.x)/30.0f;
+		 movementScale.z+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y)/30.0f;
 		movementScale.y=1.0f;		
 		currentImage.gameObject.transform.localScale=movementScale;
 	}
