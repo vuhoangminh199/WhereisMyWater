@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae5089f0fa7bb841bdd7492fc3876aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 3
   currentImage: {fileID: 100004}
   particleImages:
   - {fileID: 100004}

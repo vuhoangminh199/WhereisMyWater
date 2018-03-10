@@ -4,16 +4,20 @@ using System.Collections;
 
 public class DynamicParticle : MonoBehaviour {	
 	public enum STATES{WATER,GAS,LAVA,NONE}; //The 3 states of the particle
-	STATES currentState=STATES.NONE; //Defines the currentstate of the particle, default is water
+    public STATES currentState=STATES.NONE; //Defines the currentstate of the particle, default is water
 	public GameObject currentImage; //The image is for the metaball shader for the effect, it is onle seen by the liquids camera.
 	public GameObject[] particleImages; //We need multiple particle images to reduce drawcalls
 	float GAS_FLOATABILITY=7.0f; //How fast does the gas goes up?
 	float particleLifeTime=3.0f,startTime;//How much time before the particle scalesdown and dies	
-	public GameObject duckObject;
-	private int checkDuck = 0 ;
 	void Awake(){ 
 		if (currentState == STATES.NONE)
 			SetState (STATES.WATER);
+	}
+	public bool checkWater(){
+		if(currentState == STATES.WATER){
+			return true;
+		}
+		return false;
 	}
 
 	//The definitios to each state

@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/LiquidPhysics/SplashScreen.unity
+    guid: f80328fffe4504912b6984fa246fe6a0
+  - enabled: 1
+    path: Assets/LiquidPhysics/WIMW.unity
+    guid: 17a76956cc37cc5418c5d69d2722b046

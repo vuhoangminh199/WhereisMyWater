@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactive
+  - DynamicParticle
+  - water
+  - finalTag
   layers:
   - Default
   - TransparentFX
