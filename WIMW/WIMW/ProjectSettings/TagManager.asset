@@ -8,6 +8,9 @@ TagManager:
   - DynamicParticle
   - water
   - finalTag
+  - Dirt
+  - Wall
+  - Duck
   layers:
   - Default
   - TransparentFX
