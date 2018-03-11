@@ -52,13 +52,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LiquidPhysics\Scripts\ChangeScreen.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\Controller\GamePlayController.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Dirt.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Duck.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\DynamicParticle.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\FinalItem.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\Map\Map.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\Map\MapController.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\Map\MapObject.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ParticleGenerator.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ScaleScreen.cs" />
      <None Include="Assets\LiquidPhysics\Shaders\Metaballs_Multiple.shader" />
+     <None Include="Assets\Resources\Map\Map1.xml" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>

@@ -20,7 +20,6 @@ public class Duck : MonoBehaviour {
 				Destroy(other.gameObject);
 				if (checkDuck == 0) {
         				 //GameOver();
-						 
 						 Destroy(gameObject);
     				 
 				} else {
