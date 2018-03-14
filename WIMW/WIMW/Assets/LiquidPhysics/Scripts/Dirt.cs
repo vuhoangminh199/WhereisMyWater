@@ -33,16 +33,17 @@ public class Dirt : MonoBehaviour {
 
     void MovementAnimation(){
 		Vector3 movementScale=new Vector3(1.0f,1.0f,1.0f);// metaball			
-		 movementScale.x+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.x)/30.0f;
-		 movementScale.z+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y)/30.0f;
+		movementScale.x+=Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x)/30.0f;
+		movementScale.z+=Mathf.Abs(GetComponent<Rigidbody2D>().velocity.y)/30.0f;
 		movementScale.y=1.0f;		
-		currentImage.gameObject.transform.localScale=movementScale;
+		currentImage.transform.localScale=movementScale;
 	}
 
 	
 	void ScaleDown(){ 
-		float scaleValue = 1.0f-((Time.time)/particleLifeTime);
-		Vector2 particleScale=Vector2.one;
+		float scaleValue = 1.0f-Time.time/particleLifeTime;
+        Debug.Log("SPF: "+ 1/Time.deltaTime);
+        Vector2 particleScale=Vector2.one;
 		if (scaleValue <= 0) {
 						Destroy (gameObject);
 		} else{
@@ -54,7 +55,7 @@ public class Dirt : MonoBehaviour {
 
     void Update () {
         TouchDes(); 
-        MovementAnimation(); 
-		ScaleDown();
+        //MovementAnimation(); 
+		//ScaleDown();
     }
 }
