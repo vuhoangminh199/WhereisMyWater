@@ -9,28 +9,30 @@ public class Dirt : MonoBehaviour {
     private float Tile;
     public GameObject currentImage; 
     float particleLifeTime=100000000.0f;
+    public bool flag = false;
 
     void Start()
     {
         cam = GameObject.Find("GameCamera").GetComponent<Camera>();
         Tile = cam.orthographicSize / Camera.main.orthographicSize;
     }
+
     void TouchDes()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            Vector3 tem =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 touc = tem - Camera.main.transform.position;
-            touc = touc* Tile;
-            //if (colli.OverlapPoint(new Vector2(touc.x, touc.y)))
-            // .25f la ban kinh cua collider
-            if (Mathf.Abs(touc.x - transform.position.x) <= .5f && Mathf.Abs(touc.y - transform.position.y) <= .5f)
-                Destroy(gameObject);
-        }
+    {   
+            if (Input.GetMouseButton(0))
+                {
+                    Vector3 tem =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3 touc = tem - Camera.main.transform.position;
+                    touc = touc* Tile;
+                    //if (colli.OverlapPoint(new Vector2(touc.x, touc.y)))
+                    // .5f la ban kinh cua collider
+                    if (Mathf.Abs(touc.x - transform.position.x) <= .5f && Mathf.Abs(touc.y - transform.position.y) <= .5f)
+                        Destroy(gameObject);
+                } 
     }
 
     void MovementAnimation(){
-		Vector3 movementScale=new Vector3(1.0f,1.0f,1.0f);//Tamaño de textura no de metaball			
+		Vector3 movementScale=new Vector3(1.0f,1.0f,1.0f);// metaball			
 		 movementScale.x+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.x)/30.0f;
 		 movementScale.z+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y)/30.0f;
 		movementScale.y=1.0f;		

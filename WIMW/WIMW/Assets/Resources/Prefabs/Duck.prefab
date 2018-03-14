@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 212104436647382336}
   - component: {fileID: 58292768423903166}
   - component: {fileID: 114406290485949242}
+  - component: {fileID: 50219083154314270}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -73,6 +74,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50219083154314270
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335891393205830}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58292768423903166
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -87,7 +108,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.32
+  m_Radius: 0.7
 --- !u!95 &95578814545195428
 Animator:
   serializedVersion: 3
@@ -111,7 +132,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335891393205830}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b782b3b6b0d88493c869071ddfaf7cf0, type: 3}
   m_Name: 

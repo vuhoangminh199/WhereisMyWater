@@ -19,6 +19,7 @@ public class MapObject {
         Name = "Error";
         X = 0;Y = 0;
     }
+    
     public MapObject(string nam, float posX, float poxY)
     {
         Name = nam;

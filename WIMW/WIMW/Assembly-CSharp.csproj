@@ -60,6 +60,7 @@
      <Compile Include="Assets\LiquidPhysics\Scripts\Map\Map.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Map\MapController.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Map\MapObject.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\MenuInGame.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ParticleGenerator.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ScaleScreen.cs" />
      <None Include="Assets\LiquidPhysics\Shaders\Metaballs_Multiple.shader" />

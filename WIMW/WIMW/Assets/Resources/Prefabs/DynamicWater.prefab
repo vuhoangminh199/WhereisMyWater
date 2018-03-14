@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4153125710688996}
   - component: {fileID: 33014679586348898}
   - component: {fileID: 23181855833879954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ParticleImage_Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 58219074229502616}
   - component: {fileID: 50343561540745210}
   - component: {fileID: 114556905142894492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DynamicWater
   m_TagString: water
   m_Icon: {fileID: 0}

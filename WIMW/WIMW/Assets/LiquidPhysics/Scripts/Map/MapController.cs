@@ -15,10 +15,10 @@ public class MapController : MonoBehaviour {
         map = new Map();
 
         //SaveMap
-        //CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
+        CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
 
         //Load Map
-        InitMap(1);
+        //InitMap(1);
     }
 
     void CreateMap(string path)
@@ -77,6 +77,7 @@ public class MapController : MonoBehaviour {
             {
                 Vector3 position = new Vector3(item.X, item.Y, 1);
                 GameObject MapObject = Instantiate(obj);
+                MapObject.transform.localScale = obj.transform.localScale;
                 MapObject.transform.position = position;
                 MapObject.transform.SetParent(transform);
             }
