@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Duck : MonoBehaviour {
 	public int checkDuck = 3;
-	private float timeLife = 0.25f;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,18 +15,15 @@ public class Duck : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
-		if(other.collider.GetComponent<DynamicParticle>().checkWater() && other.gameObject.tag =="DynamicParticle"){ 
-				Destroy(other.gameObject);
+		if(other.collider.GetComponent<DynamicParticle>().checkWater() && other.gameObject.tag =="water"){ 
+				
+
 				if (checkDuck == 0) {
-        				 //GameOver();
-						 Destroy(gameObject);
+					 Destroy(gameObject);
     				 
 				} else {
-					timeLife -= Time.deltaTime;
-					if ( timeLife < 0 )
-    				 {
-						checkDuck --; 
-					 }
+					 checkDuck --;
+					 Destroy(other.gameObject);
 				}
 		}
 	}

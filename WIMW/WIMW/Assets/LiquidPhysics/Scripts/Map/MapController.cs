@@ -15,10 +15,10 @@ public class MapController : MonoBehaviour {
         map = new Map();
 
         //SaveMap
-        CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
+        //CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
 
         //Load Map
-        //InitMap(1);
+        InitMap(1);
     }
 
     void CreateMap(string path)
@@ -73,6 +73,13 @@ public class MapController : MonoBehaviour {
                obj = (GameObject)Resources.Load(prefabsPath+"Map/" + item.Name +index, typeof(GameObject));
             else
                 obj = (GameObject)Resources.Load(prefabsPath + item.Name, typeof(GameObject));
+            if (item.Name=="finalObject"){
+                Vector3 position = new Vector3(item.X, item.Y, -2);
+                GameObject MapObject = Instantiate(obj);
+                MapObject.transform.localScale = obj.transform.localScale;
+                MapObject.transform.position = position;
+                MapObject.transform.SetParent(transform);
+            }
             if (obj != null)
             {
                 Vector3 position = new Vector3(item.X, item.Y, 1);
