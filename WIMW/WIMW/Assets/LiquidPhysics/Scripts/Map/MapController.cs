@@ -13,12 +13,16 @@ public class MapController : MonoBehaviour {
     void Start()
     {
         map = new Map();
-
+        if (MenuInGame.level == 11) {
+            InitMap(1);
+        } else if (MenuInGame.level == 12) {
+            InitMap(2);
+        }
         //SaveMap
-        //CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
+       // CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
 
         //Load Map
-        InitMap(1);
+        //InitMap(1);
     }
 
     void CreateMap(string path)
@@ -89,6 +93,8 @@ public class MapController : MonoBehaviour {
                 MapObject.transform.SetParent(transform);
             }
         }
+        //todo change screen
+
     }
     public void RemoveMap()
     {

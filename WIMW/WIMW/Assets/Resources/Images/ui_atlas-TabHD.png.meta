@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4fe9ca71b3c6147a09328fb8d97ad3e3
-timeCreated: 1520815553
+timeCreated: 1521447309
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -929,9 +929,9 @@ TextureImporter:
       name: ui_atlas-TabHD_22
       rect:
         serializedVersion: 2
-        x: 287
+        x: 286
         y: 991
-        width: 1669
+        width: 1560
         height: 108
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -977,6 +977,20 @@ TextureImporter:
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ui_atlas-TabHD_26
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 990
+        width: 111
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

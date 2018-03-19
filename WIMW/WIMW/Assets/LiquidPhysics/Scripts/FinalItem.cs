@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FinalItem : MonoBehaviour {
-	public int countItemWater = 3;
+	public int countItemWater = 2;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,7 +20,7 @@ public class FinalItem : MonoBehaviour {
 			
 			//Application.LoadLevel("sceneName");
 			if (countItemWater == 0) {
-    			//GAMEOVER TODO
+				MenuInGame.instance.onGameOver();
 				Debug.Log("gameover");
 				} else {
 					 countItemWater --;

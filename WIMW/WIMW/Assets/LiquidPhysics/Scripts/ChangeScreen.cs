@@ -16,6 +16,8 @@ public class ChangeScreen : MonoBehaviour {
 
 	public GameObject title_canvas_3;
 
+	public static ChangeScreen instance;
+
 	public void ChangeScreenMenu(string sceneName) {
 		Application.LoadLevel(sceneName);
 	}
@@ -59,17 +61,20 @@ public class ChangeScreen : MonoBehaviour {
 	}
 
 	public void onPressLv1(int lv){
-		canvas_2.SetActive(true);
-		canvas_1.SetActive(false);
-		canvas_3.SetActive(false);
-		img_canvas_2_1.SetActive(true);
-		img_canvas_2_2.SetActive(true);	
-		if (lv == 1){	
-			Application.LoadLevel("WIMW");
+		// canvas_2.SetActive(true);
+		// canvas_1.SetActive(false);
+		// canvas_3.SetActive(false);
+		// img_canvas_2_1.SetActive(true);
+		// img_canvas_2_2.SetActive(true);	
+		if (lv == 1){
+			MenuInGame.level = 11;
+			Application.LoadLevel("Level1_1");
 		} else if (lv == 2) {
-
+			MenuInGame.level = 12;
+			Application.LoadLevel("Level1_2");
 		} else {
 
 		}
 	}
+
 }

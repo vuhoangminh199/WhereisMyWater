@@ -1,0 +1,1047 @@
+fileFormatVersion: 2
+guid: d6bd952688f20417a9f741576e740bd5
+timeCreated: 1520564898
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: duckies-TabHD_0
+    21300002: duckies-TabHD_1
+    21300004: duckies-TabHD_2
+    21300006: duckies-TabHD_3
+    21300008: duckies-TabHD_4
+    21300010: duckies-TabHD_5
+    21300012: duckies-TabHD_6
+    21300014: duckies-TabHD_7
+    21300016: duckies-TabHD_8
+    21300018: duckies-TabHD_9
+    21300020: duckies-TabHD_10
+    21300022: duckies-TabHD_11
+    21300024: duckies-TabHD_12
+    21300026: duckies-TabHD_13
+    21300028: duckies-TabHD_14
+    21300030: duckies-TabHD_15
+    21300032: duckies-TabHD_16
+    21300034: duckies-TabHD_17
+    21300036: duckies-TabHD_18
+    21300038: duckies-TabHD_19
+    21300040: duckies-TabHD_20
+    21300042: duckies-TabHD_21
+    21300044: duckies-TabHD_22
+    21300046: duckies-TabHD_23
+    21300048: duckies-TabHD_24
+    21300050: duckies-TabHD_25
+    21300052: duckies-TabHD_26
+    21300054: duckies-TabHD_27
+    21300056: duckies-TabHD_28
+    21300058: duckies-TabHD_29
+    21300060: duckies-TabHD_30
+    21300062: duckies-TabHD_31
+    21300064: duckies-TabHD_32
+    21300066: duckies-TabHD_33
+    21300068: duckies-TabHD_34
+    21300070: duckies-TabHD_35
+    21300072: duckies-TabHD_36
+    21300074: duckies-TabHD_37
+    21300076: duckies-TabHD_38
+    21300078: duckies-TabHD_39
+    21300080: duckies-TabHD_40
+    21300082: duckies-TabHD_41
+    21300084: duckies-TabHD_42
+    21300086: duckies-TabHD_43
+    21300088: duckies-TabHD_44
+    21300090: duckies-TabHD_45
+    21300092: duckies-TabHD_46
+    21300094: duckies-TabHD_47
+    21300096: duckies-TabHD_48
+    21300098: duckies-TabHD_49
+    21300100: duckies-TabHD_50
+    21300102: duckies-TabHD_51
+    21300104: duckies-TabHD_52
+    21300106: duckies-TabHD_53
+    21300108: duckies-TabHD_54
+    21300110: duckies-TabHD_55
+    21300112: duckies-TabHD_56
+    21300114: duckies-TabHD_57
+    21300116: duckies-TabHD_58
+    21300118: duckies-TabHD_59
+    21300120: duckies-TabHD_60
+    21300122: duckies-TabHD_61
+    21300124: duckies-TabHD_62
+    21300126: duckies-TabHD_63
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: duckies-TabHD_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1800
+        width: 246
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1558
+        width: 252
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1618
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1552
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_4
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1578
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1360
+        width: 210
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1360
+        width: 210
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1167
+        width: 210
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1177
+        width: 144
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_9
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1209
+        width: 120
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1172
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1017
+        width: 117
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1028
+        width: 108
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1028
+        width: 110
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_14
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1028
+        width: 110
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 880
+        width: 110
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 888
+        width: 104
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_17
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 889
+        width: 101
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 893
+        width: 76
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_19
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 894
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 757
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_21
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 808
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 763
+        width: 94
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_23
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 763
+        width: 128
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 760
+        width: 138
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 640
+        width: 128
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 641
+        width: 92
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_27
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 643
+        width: 100
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_28
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 643
+        width: 90
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_29
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 644
+        width: 91
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 568
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 528
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_32
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 528
+        width: 89
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 534
+        width: 101
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_34
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 542
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_35
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 568
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_36
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 541
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 431
+        width: 91
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_38
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 437
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_39
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 437
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_40
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 437
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_41
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 338
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_42
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 247
+        width: 103
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_43
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 338
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_44
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 338
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 247
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_46
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 247
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_47
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 247
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_48
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 252
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 160
+        width: 69
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_50
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 175
+        width: 67
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_51
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 175
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_52
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 176
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_53
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 176
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_54
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 179
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_55
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 182
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 96
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_57
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 98
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_58
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 110
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_59
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 110
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_60
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 110
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_61
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 112
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_62
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 113
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: duckies-TabHD_63
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 126
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

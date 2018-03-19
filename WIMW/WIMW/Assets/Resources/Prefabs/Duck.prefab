@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 212104436647382336}
   - component: {fileID: 58292768423903166}
   - component: {fileID: 50219083154314270}
-  - component: {fileID: 114133777509985460}
+  - component: {fileID: 114067673038206606}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -126,7 +126,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114133777509985460
+--- !u!114 &114067673038206606
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
