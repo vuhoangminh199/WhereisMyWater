@@ -65,6 +65,7 @@
      <Compile Include="Assets\LiquidPhysics\Scripts\ParticleGenerator.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ScaleScreen.cs" />
      <None Include="Assets\LiquidPhysics\Shaders\Metaballs_Multiple.shader" />
+     <None Include="Assets\Resources\Map\Map3.xml" />
      <None Include="Assets\Resources\Map\Map1.xml" />
      <None Include="Assets\Resources\Map\Map2.xml" />
  <Reference Include="UnityEngine.UIAutomation">

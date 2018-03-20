@@ -72,8 +72,9 @@ public class ChangeScreen : MonoBehaviour {
 		} else if (lv == 2) {
 			MenuInGame.level = 12;
 			Application.LoadLevel("Level1_2");
-		} else {
-
+		} else if (lv == 3){
+			MenuInGame.level = 13;
+			Application.LoadLevel("Level1_3");
 		}
 	}
 

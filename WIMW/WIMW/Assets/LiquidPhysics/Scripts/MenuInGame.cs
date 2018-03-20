@@ -29,6 +29,8 @@ public class MenuInGame : MonoBehaviour {
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-1";
         } else if (level == 12){
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-2";
+        } else if (level == 13){
+            text_level.GetComponent<UnityEngine.UI.Text>().text = "1-3";
         }
     }
 
@@ -84,6 +86,7 @@ public class MenuInGame : MonoBehaviour {
             duck_final_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
             duck_final_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
         }
+       
 	}
 
      void _MakeSingleInstance(){
@@ -100,14 +103,42 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_1");
             } else if (level == 12){
                 Application.LoadLevel("Level1_2");
-            }		
+            } else if (level == 13){
+                Application.LoadLevel("Level1_3");
+            }			
 	}
+
+    public void onPressNextLevel(){
+        checkLevel();
+        if (level == 11) {
+            Application.LoadLevel("Level1_1");
+            MapController.instance.checkMap();
+        } else if(level == 12) {
+            Application.LoadLevel("Level1_2");
+            MapController.instance.checkMap();
+        } else if (level == 13){
+            Application.LoadLevel("Level1_3");
+        }	
+    }
+    private void checkLevel(){
+         if (level == 11) {
+            level = 12;
+            return;
+        } else if (level == 12){
+            level = 13;
+            return;
+        } else if (level == 13){
+            return;
+        }
+    }
 
     public void onPressRepeat(){	
 			if (level == 11){
                 Application.LoadLevel("Level1_1");
             } else if (level == 12){
                 Application.LoadLevel("Level1_2");
-            }	
+            } else if (level == 13){
+                Application.LoadLevel("Level1_3");
+            }		
 	}
 }

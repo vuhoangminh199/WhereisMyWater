@@ -9,6 +9,7 @@ public class MapController : MonoBehaviour {
     private string SAVE_MAP_PATH = "/Resources/Map/Map";
     private string SavePATH = "Map/";
     private string prefabsPath = "Prefabs/";
+    public static MapController instance;
 
     void Start()
     {
@@ -17,12 +18,36 @@ public class MapController : MonoBehaviour {
             InitMap(1);
         } else if (MenuInGame.level == 12) {
             InitMap(2);
+        } else if (MenuInGame.level ==13){
+            InitMap(3);
         }
+        instance = this;
         //SaveMap
-       // CreateMap(Application.dataPath + SAVE_MAP_PATH + "1.xml");
+    //    CreateMap(Application.dataPath + SAVE_MAP_PATH + "3.xml");
 
         //Load Map
         //InitMap(1);
+    }
+    void Update(){
+        // if (MenuInGame.level == 11) {
+        //     InitMap(1);
+        // } else if (MenuInGame.level == 12) {
+        //     InitMap(2);
+        // } else if (MenuInGame.level ==13){
+        //     InitMap(3);
+        // }
+    }
+    public void checkMap(){
+        if (MenuInGame.level == 11) {
+            InitMap(1);
+            Debug.Log("1");
+        } else if (MenuInGame.level == 12) {
+            InitMap(2);
+            Debug.Log("2");
+        } else if (MenuInGame.level ==13){
+            InitMap(3);
+            Debug.Log("3");
+        }
     }
 
     void CreateMap(string path)
@@ -32,9 +57,14 @@ public class MapController : MonoBehaviour {
             Transform Child = transform.GetChild(i);
             if (Child.tag == "finalTag")
             {
-                //                             Prefabs Name
-                MapObject obj = new MapObject("finalObject", Child.position.x, Child.position.y);
-                map.items.Add(obj);
+                if (MenuInGame.level == 13){
+                    MapObject obj = new MapObject("finalObjectlv13", Child.position.x, Child.position.y);
+                    map.items.Add(obj);
+                } else {
+                    //                             Prefabs Name
+                    MapObject obj = new MapObject("finalObject", Child.position.x, Child.position.y);
+                    map.items.Add(obj);
+                }  
             }
             if (Child.tag == "Wall")
             {
@@ -78,6 +108,13 @@ public class MapController : MonoBehaviour {
             else
                 obj = (GameObject)Resources.Load(prefabsPath + item.Name, typeof(GameObject));
             if (item.Name=="finalObject"){
+                Vector3 position = new Vector3(item.X, item.Y, -2);
+                GameObject MapObject = Instantiate(obj);
+                MapObject.transform.localScale = obj.transform.localScale;
+                MapObject.transform.position = position;
+                MapObject.transform.SetParent(transform);
+            }
+            if (item.Name=="finalObjectlv13"){
                 Vector3 position = new Vector3(item.X, item.Y, -2);
                 GameObject MapObject = Instantiate(obj);
                 MapObject.transform.localScale = obj.transform.localScale;

@@ -7597,7 +7597,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.443
+      value: 1.638
       objectReference: {fileID: 0}
     - target: {fileID: 4184075988398906, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
       propertyPath: m_LocalScale.x
@@ -7609,7 +7609,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.22926313
+      value: 0.15795846
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.40063754
+      objectReference: {fileID: 0}
+    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.015375614
+      objectReference: {fileID: 0}
+    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 8.610751
+      objectReference: {fileID: 0}
+    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.014810264
+      objectReference: {fileID: 0}
+    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.63619435
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
@@ -13209,12 +13237,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1315510623}
-        m_MethodName: 
+      - m_Target: {fileID: 1315510629}
+        m_MethodName: onPressNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
