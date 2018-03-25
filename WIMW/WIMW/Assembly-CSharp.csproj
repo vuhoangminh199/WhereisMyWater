@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\LiquidPhysics\Scripts\ChangeScreen.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Controller\GamePlayController.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\DestroyerWater.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Dirt.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\Duck.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\DynamicParticle.cs" />
@@ -63,9 +64,11 @@
      <Compile Include="Assets\LiquidPhysics\Scripts\Map\MapObject.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\MenuInGame.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ParticleGenerator.cs" />
+     <Compile Include="Assets\LiquidPhysics\Scripts\PipeOut.cs" />
      <Compile Include="Assets\LiquidPhysics\Scripts\ScaleScreen.cs" />
      <None Include="Assets\LiquidPhysics\Shaders\Metaballs_Multiple.shader" />
      <None Include="Assets\Resources\Map\Map3.xml" />
+     <None Include="Assets\Resources\Map\Map4.xml" />
      <None Include="Assets\Resources\Map\Map1.xml" />
      <None Include="Assets\Resources\Map\Map2.xml" />
  <Reference Include="UnityEngine.UIAutomation">

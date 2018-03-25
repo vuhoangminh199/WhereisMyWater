@@ -179,5 +179,14 @@
     <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
     <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
     <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
+    <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
+    <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
+    <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
+    <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
+    <item name="DynamicWater" X="-0.00199997425" Y="1.893" />
+    <item name="tileLeft" X="-2.4" Y="0.0120000243" />
+    <item name="tileRight" X="2.43" Y="0" />
+    <item name="tileTop" X="-0.9999999" Y="3.84000015" />
+    <item name="tileBottom" X="0.220000029" Y="-3.92" />
   </items>
 </Map>

@@ -11,6 +11,10 @@ TagManager:
   - Dirt
   - Wall
   - Duck
+  - TileTop
+  - TileBottom
+  - TileRight
+  - TileLeft
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@
     <item name="Duck" X="-0.159699917" Y="-0.805" />
     <item name="Duck" X="-1.33599985" Y="-0.813" />
     <item name="Duck" X="0.407000065" Y="-1.723" />
-    <item name="finalObjectlv13" X="0.91" Y="-3" />
+    <item name="finalObject" X="0.91" Y="-3" />
     <item name="Wall" X="0.00100004673" Y="-0.397999942" />
     <item name="Dirt" X="2.023" Y="1.17751062" />
     <item name="Dirt" X="1.82299984" Y="1.17751062" />
@@ -87,5 +87,9 @@
     <item name="DynamicWater" X="-0.00199997425" Y="1.8029995" />
     <item name="DynamicWater" X="-0.00199997425" Y="1.8029995" />
     <item name="DynamicWater" X="-0.00199997425" Y="1.8029995" />
+    <item name="tileLeft" X="-2.4" Y="0.0120000243" />
+    <item name="tileRight" X="2.43" Y="0" />
+    <item name="tileTop" X="-0.9999999" Y="3.84000015" />
+    <item name="tileBottom" X="0.220000029" Y="-3.92" />
   </items>
 </Map>

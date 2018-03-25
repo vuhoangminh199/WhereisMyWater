@@ -20,10 +20,12 @@ public class MapController : MonoBehaviour {
             InitMap(2);
         } else if (MenuInGame.level ==13){
             InitMap(3);
+        } else if (MenuInGame.level ==14){
+            InitMap(4);
         }
         instance = this;
         //SaveMap
-    //    CreateMap(Application.dataPath + SAVE_MAP_PATH + "3.xml");
+    //   CreateMap(Application.dataPath + SAVE_MAP_PATH + "4.xml");
 
         //Load Map
         //InitMap(1);
@@ -69,6 +71,26 @@ public class MapController : MonoBehaviour {
             if (Child.tag == "Wall")
             {
                 MapObject obj = new MapObject("Wall", Child.position.x, Child.position.y);
+                map.items.Add(obj);
+            }
+            if (Child.tag == "TileTop")
+            {
+                MapObject obj = new MapObject("tileTop", Child.position.x, Child.position.y);
+                map.items.Add(obj);
+            }
+            if (Child.tag == "TileBottom")
+            {
+                MapObject obj = new MapObject("tileBottom", Child.position.x, Child.position.y);
+                map.items.Add(obj);
+            }
+             if (Child.tag == "TileLeft")
+            {
+                MapObject obj = new MapObject("tileLeft", Child.position.x, Child.position.y);
+                map.items.Add(obj);
+            }
+             if (Child.tag == "TileRight")
+            {
+                MapObject obj = new MapObject("tileRight", Child.position.x, Child.position.y);
                 map.items.Add(obj);
             }
             if (Child.tag == "Duck")

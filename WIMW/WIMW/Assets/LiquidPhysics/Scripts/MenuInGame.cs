@@ -31,6 +31,8 @@ public class MenuInGame : MonoBehaviour {
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-2";
         } else if (level == 13){
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-3";
+        } else if (level == 14){
+            text_level.GetComponent<UnityEngine.UI.Text>().text = "1-4";
         }
     }
 
@@ -105,6 +107,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_2");
             } else if (level == 13){
                 Application.LoadLevel("Level1_3");
+            } else if (level == 14){
+                Application.LoadLevel("Level1_4");
             }			
 	}
 
@@ -118,6 +122,8 @@ public class MenuInGame : MonoBehaviour {
             MapController.instance.checkMap();
         } else if (level == 13){
             Application.LoadLevel("Level1_3");
+        } else if (level == 14){
+            Application.LoadLevel("Level1_4");
         }	
     }
     private void checkLevel(){
@@ -128,6 +134,9 @@ public class MenuInGame : MonoBehaviour {
             level = 13;
             return;
         } else if (level == 13){
+            level = 14;
+            return;
+        } else if (level == 14){
             return;
         }
     }
@@ -139,6 +148,26 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_2");
             } else if (level == 13){
                 Application.LoadLevel("Level1_3");
-            }		
+            } else if (level == 14){
+                Application.LoadLevel("Level1_4");
+            }			
 	}
+
+    public void onOutOfWater(){	
+		CheckLevel();		
+	}
+
+    IEnumerator CheckLevel() {
+        
+        yield return new WaitForSeconds(2);
+        if (level == 11){
+                Application.LoadLevel("Level1_1");
+            } else if (level == 12){
+                Application.LoadLevel("Level1_2");
+            } else if (level == 13){
+                Application.LoadLevel("Level1_3");
+            } else if (level == 14){
+                Application.LoadLevel("Level1_4");
+            }
+    }
 }
