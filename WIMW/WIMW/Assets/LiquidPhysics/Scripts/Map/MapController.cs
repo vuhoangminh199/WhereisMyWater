@@ -14,20 +14,20 @@ public class MapController : MonoBehaviour {
     void Start()
     {
         map = new Map();
-        // if (MenuInGame.level == 11) {
-        //     InitMap(1);
-        // } else if (MenuInGame.level == 12) {
-        //     InitMap(2);
-        // } else if (MenuInGame.level ==13){
-        //     InitMap(3);
-        // } else if (MenuInGame.level ==14){
-        //     InitMap(4);
-        // } else if (MenuInGame.level ==21){
-        //     InitMap(5);
-        // }
+        if (MenuInGame.level == 11) {
+            InitMap(1);
+        } else if (MenuInGame.level == 12) {
+            InitMap(2);
+        } else if (MenuInGame.level ==13){
+            InitMap(3);
+        } else if (MenuInGame.level ==14){
+            InitMap(4);
+        } else if (MenuInGame.level ==21){
+            InitMap(5);
+        }
         instance = this;
         //SaveMap
-        CreateMap(Application.dataPath + SAVE_MAP_PATH + "5.xml");
+        // CreateMap(Application.dataPath + SAVE_MAP_PATH + "5.xml");
 
         //Load Map 
         //InitMap(1);
