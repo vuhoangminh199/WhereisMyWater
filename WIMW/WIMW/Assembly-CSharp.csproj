@@ -70,6 +70,7 @@
      <None Include="Assets\Resources\Map\Map3.xml" />
      <None Include="Assets\Resources\Map\Map4.xml" />
      <None Include="Assets\Resources\Map\Map1.xml" />
+     <None Include="Assets\Resources\Map\Map5.xml" />
      <None Include="Assets\Resources\Map\Map2.xml" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>

@@ -26,5 +26,9 @@ public class DestroyerWater : MonoBehaviour {
 					 Destroy(other.gameObject);
 				}
 		}
+
+		if(other.gameObject.tag =="DynamicParticle"){ 
+			Destroy(other.gameObject);
+		}
 	}
 }

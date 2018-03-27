@@ -33,6 +33,8 @@ public class MenuInGame : MonoBehaviour {
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-3";
         } else if (level == 14){
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-4";
+        } else if (level == 21){
+            text_level.GetComponent<UnityEngine.UI.Text>().text = "2-1";
         }
     }
 
@@ -109,6 +111,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_3");
             } else if (level == 14){
                 Application.LoadLevel("Level1_4");
+            } else if (level == 21){
+                Application.LoadLevel("Level2_1");
             }			
 	}
 
@@ -124,7 +128,9 @@ public class MenuInGame : MonoBehaviour {
             Application.LoadLevel("Level1_3");
         } else if (level == 14){
             Application.LoadLevel("Level1_4");
-        }	
+        } else if (level == 21){
+            Application.LoadLevel("Level2_1");
+        }
     }
     private void checkLevel(){
          if (level == 11) {
@@ -137,6 +143,9 @@ public class MenuInGame : MonoBehaviour {
             level = 14;
             return;
         } else if (level == 14){
+            level = 21;
+            return;
+        } else if (level == 21){
             return;
         }
     }
@@ -150,7 +159,9 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_3");
             } else if (level == 14){
                 Application.LoadLevel("Level1_4");
-            }			
+            } else if (level == 21){
+                Application.LoadLevel("Level2_1");
+            }				
 	}
 
     public void onOutOfWater(){	
@@ -168,6 +179,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_3");
             } else if (level == 14){
                 Application.LoadLevel("Level1_4");
+            } else if (level == 21){
+                Application.LoadLevel("Level2_1");
             }
     }
 }

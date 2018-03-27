@@ -28,12 +28,12 @@ public class DynamicParticle : MonoBehaviour {
 					gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 				break;
 				case STATES.GAS:		
-					particleLifeTime=particleLifeTime/2.0f;	// Gas lives the time the other particles
+					particleLifeTime=3/2.0f;	// Gas lives the time the other particles
 					gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 					gameObject.layer=LayerMask.NameToLayer("Gas");// To have a different collision layer than the other particles (so gas doesnt rises up the lava but still collides with the wolrd)
 				break;					
 				case STATES.LAVA:
-					gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.3f;
+					gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 				break;	
 				case STATES.NONE:
 					Destroy(gameObject);
@@ -43,9 +43,9 @@ public class DynamicParticle : MonoBehaviour {
 				currentState=newState;
 				startTime=Time.time;//Reset the life of the particle on a state change
 				gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2();// Reset the particle velocity	
-				currentImage.SetActive(false);
-				currentImage=particleImages[(int)currentState];
-				currentImage.SetActive(true);
+				//currentImage.SetActive(false);
+				//currentImage=particleImages[0];
+				//currentImage.SetActive(true);
 			}
 		}		
 	}
@@ -61,8 +61,8 @@ public class DynamicParticle : MonoBehaviour {
 			break;
 			case STATES.GAS:
 				if(gameObject.GetComponent<Rigidbody2D>().velocity.y<50){ //Limits the speed in Y to avoid reaching mach 7 in speed
-					gameObject.GetComponent<Rigidbody2D>().AddForce (new Vector2(0,GAS_FLOATABILITY)); // Gas always goes upwards
-				}
+				gameObject.GetComponent<Rigidbody2D>().AddForce (new Vector2(0,GAS_FLOATABILITY)); // Gas always goes upwards
+				}	
 				ScaleDown();
 			break;
 
@@ -98,6 +98,7 @@ public class DynamicParticle : MonoBehaviour {
 		if(currentState==STATES.WATER && other.gameObject.tag =="DynamicParticle"){ 
 			if(other.collider.GetComponent<DynamicParticle>().currentState==STATES.LAVA){
 				SetState(STATES.GAS);
+				//Debug.Log(other.collider.GetComponent<DynamicParticle>().currentState)
 			}
 		}
 

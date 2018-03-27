@@ -15,6 +15,7 @@ TagManager:
   - TileBottom
   - TileRight
   - TileLeft
+  - lava
   layers:
   - Default
   - TransparentFX

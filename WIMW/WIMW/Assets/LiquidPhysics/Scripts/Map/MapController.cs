@@ -14,20 +14,22 @@ public class MapController : MonoBehaviour {
     void Start()
     {
         map = new Map();
-        if (MenuInGame.level == 11) {
-            InitMap(1);
-        } else if (MenuInGame.level == 12) {
-            InitMap(2);
-        } else if (MenuInGame.level ==13){
-            InitMap(3);
-        } else if (MenuInGame.level ==14){
-            InitMap(4);
-        }
+        // if (MenuInGame.level == 11) {
+        //     InitMap(1);
+        // } else if (MenuInGame.level == 12) {
+        //     InitMap(2);
+        // } else if (MenuInGame.level ==13){
+        //     InitMap(3);
+        // } else if (MenuInGame.level ==14){
+        //     InitMap(4);
+        // } else if (MenuInGame.level ==21){
+        //     InitMap(5);
+        // }
         instance = this;
         //SaveMap
-    //   CreateMap(Application.dataPath + SAVE_MAP_PATH + "4.xml");
+        CreateMap(Application.dataPath + SAVE_MAP_PATH + "5.xml");
 
-        //Load Map
+        //Load Map 
         //InitMap(1);
     }
     void Update(){
@@ -49,6 +51,11 @@ public class MapController : MonoBehaviour {
         } else if (MenuInGame.level ==13){
             InitMap(3);
             Debug.Log("3");
+        } else if (MenuInGame.level ==14){
+            InitMap(4);
+            Debug.Log("4");
+        } else if (MenuInGame.level ==21){
+            InitMap(5);
         }
     }
 
@@ -62,7 +69,11 @@ public class MapController : MonoBehaviour {
                 if (MenuInGame.level == 13){
                     MapObject obj = new MapObject("finalObjectlv13", Child.position.x, Child.position.y);
                     map.items.Add(obj);
-                } else {
+                } else if (MenuInGame.level == 21){
+                    //                             Prefabs Name
+                    MapObject obj = new MapObject("finalObject21", Child.position.x, Child.position.y);
+                    map.items.Add(obj);
+                }  else {
                     //                             Prefabs Name
                     MapObject obj = new MapObject("finalObject", Child.position.x, Child.position.y);
                     map.items.Add(obj);
@@ -101,6 +112,10 @@ public class MapController : MonoBehaviour {
             {
                 AddListItem(Child, "DynamicWater");
             }
+            if (Child.tag == "lava")
+            {
+                AddListItem(Child, "DynamicParticle");
+            }
             if (Child.tag == "Dirt")
             {
                 AddListItem(Child, "Dirt");
@@ -137,6 +152,13 @@ public class MapController : MonoBehaviour {
                 MapObject.transform.SetParent(transform);
             }
             if (item.Name=="finalObjectlv13"){
+                Vector3 position = new Vector3(item.X, item.Y, -2);
+                GameObject MapObject = Instantiate(obj);
+                MapObject.transform.localScale = obj.transform.localScale;
+                MapObject.transform.position = position;
+                MapObject.transform.SetParent(transform);
+            }
+            if (item.Name=="finalObjectlv21"){
                 Vector3 position = new Vector3(item.X, item.Y, -2);
                 GameObject MapObject = Instantiate(obj);
                 MapObject.transform.localScale = obj.transform.localScale;
