@@ -24,23 +24,14 @@ public class MapController : MonoBehaviour {
             InitMap(4);
         } else if (MenuInGame.level ==21){
             InitMap(5);
+        } else if (MenuInGame.level ==22){
+            InitMap(6);
         }
         instance = this;
         //SaveMap
-        // CreateMap(Application.dataPath + SAVE_MAP_PATH + "5.xml");
+        // CreateMap(Application.dataPath + SAVE_MAP_PATH + "6.xml");
+    }
 
-        //Load Map 
-        //InitMap(1);
-    }
-    void Update(){
-        // if (MenuInGame.level == 11) {
-        //     InitMap(1);
-        // } else if (MenuInGame.level == 12) {
-        //     InitMap(2);
-        // } else if (MenuInGame.level ==13){
-        //     InitMap(3);
-        // }
-    }
     public void checkMap(){
         if (MenuInGame.level == 11) {
             InitMap(1);
@@ -56,6 +47,8 @@ public class MapController : MonoBehaviour {
             Debug.Log("4");
         } else if (MenuInGame.level ==21){
             InitMap(5);
+        } else if (MenuInGame.level ==22){
+            InitMap(6);
         }
     }
 

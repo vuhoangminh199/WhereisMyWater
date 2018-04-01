@@ -35,6 +35,8 @@ public class MenuInGame : MonoBehaviour {
             text_level.GetComponent<UnityEngine.UI.Text>().text = "1-4";
         } else if (level == 21){
             text_level.GetComponent<UnityEngine.UI.Text>().text = "2-1";
+        } else if (level == 22){
+            text_level.GetComponent<UnityEngine.UI.Text>().text = "2-2";
         }
     }
 
@@ -113,7 +115,9 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_4");
             } else if (level == 21){
                 Application.LoadLevel("Level2_1");
-            }			
+            }  else if (level == 22){
+                Application.LoadLevel("Level2_2");
+            } 			
 	}
 
     public void onPressNextLevel(){
@@ -130,6 +134,8 @@ public class MenuInGame : MonoBehaviour {
             Application.LoadLevel("Level1_4");
         } else if (level == 21){
             Application.LoadLevel("Level2_1");
+        } else if (level == 22){
+            Application.LoadLevel("Level2_2");
         }
     }
     private void checkLevel(){
@@ -147,6 +153,8 @@ public class MenuInGame : MonoBehaviour {
             return;
         } else if (level == 21){
             return;
+        } else if (level == 22){
+            return;
         }
     }
 
@@ -161,6 +169,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_4");
             } else if (level == 21){
                 Application.LoadLevel("Level2_1");
+            } else if (level == 22){
+                Application.LoadLevel("Level2_2");
             }				
 	}
 
@@ -181,6 +191,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level1_4");
             } else if (level == 21){
                 Application.LoadLevel("Level2_1");
+            } else if (level == 22){
+                Application.LoadLevel("Level2_2");
             }
     }
 }

@@ -68,6 +68,7 @@
      <Compile Include="Assets\LiquidPhysics\Scripts\ScaleScreen.cs" />
      <None Include="Assets\LiquidPhysics\Shaders\Metaballs_Multiple.shader" />
      <None Include="Assets\Resources\Map\Map3.xml" />
+     <None Include="Assets\Resources\Map\Map6.xml" />
      <None Include="Assets\Resources\Map\Map4.xml" />
      <None Include="Assets\Resources\Map\Map1.xml" />
      <None Include="Assets\Resources\Map\Map5.xml" />
