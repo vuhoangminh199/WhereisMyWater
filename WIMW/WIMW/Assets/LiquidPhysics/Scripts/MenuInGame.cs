@@ -37,6 +37,8 @@ public class MenuInGame : MonoBehaviour {
             text_level.GetComponent<UnityEngine.UI.Text>().text = "2-1";
         } else if (level == 22){
             text_level.GetComponent<UnityEngine.UI.Text>().text = "2-2";
+        } else if (level == 23){
+            text_level.GetComponent<UnityEngine.UI.Text>().text = "2-3";
         }
     }
 
@@ -117,7 +119,9 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level2_1");
             }  else if (level == 22){
                 Application.LoadLevel("Level2_2");
-            } 			
+            }  else if (level == 23){
+                Application.LoadLevel("Level2_3");
+            }  			
 	}
 
     public void onPressNextLevel(){
@@ -136,6 +140,8 @@ public class MenuInGame : MonoBehaviour {
             Application.LoadLevel("Level2_1");
         } else if (level == 22){
             Application.LoadLevel("Level2_2");
+        } else if (level == 23){
+            Application.LoadLevel("Level2_3");
         }
     }
     private void checkLevel(){
@@ -152,8 +158,12 @@ public class MenuInGame : MonoBehaviour {
             level = 21;
             return;
         } else if (level == 21){
+            level = 22;
             return;
         } else if (level == 22){
+            level = 23;
+            return;
+        } else if (level == 23){
             return;
         }
     }
@@ -171,6 +181,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level2_1");
             } else if (level == 22){
                 Application.LoadLevel("Level2_2");
+            } else if (level == 23){
+                Application.LoadLevel("Level2_3");
             }				
 	}
 
@@ -179,7 +191,6 @@ public class MenuInGame : MonoBehaviour {
 	}
 
     IEnumerator CheckLevel() {
-        
         yield return new WaitForSeconds(2);
         if (level == 11){
                 Application.LoadLevel("Level1_1");
@@ -193,6 +204,8 @@ public class MenuInGame : MonoBehaviour {
                 Application.LoadLevel("Level2_1");
             } else if (level == 22){
                 Application.LoadLevel("Level2_2");
+            } else if (level == 23){
+                Application.LoadLevel("Level2_3");
             }
     }
 }

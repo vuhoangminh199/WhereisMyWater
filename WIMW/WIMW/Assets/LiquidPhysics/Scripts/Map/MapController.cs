@@ -26,10 +26,12 @@ public class MapController : MonoBehaviour {
             InitMap(5);
         } else if (MenuInGame.level ==22){
             InitMap(6);
+        } else if (MenuInGame.level ==23){
+            InitMap(7);
         }
         instance = this;
         //SaveMap
-        // CreateMap(Application.dataPath + SAVE_MAP_PATH + "6.xml");
+        // CreateMap(Application.dataPath + SAVE_MAP_PATH + "7.xml");
     }
 
     public void checkMap(){
@@ -49,6 +51,8 @@ public class MapController : MonoBehaviour {
             InitMap(5);
         } else if (MenuInGame.level ==22){
             InitMap(6);
+        } else if (MenuInGame.level ==23){
+            InitMap(7);
         }
     }
 
@@ -62,9 +66,13 @@ public class MapController : MonoBehaviour {
                 if (MenuInGame.level == 13){
                     MapObject obj = new MapObject("finalObjectlv13", Child.position.x, Child.position.y);
                     map.items.Add(obj);
-                } else if (MenuInGame.level == 21){
+                } else if(MenuInGame.level == 21){
                     //                             Prefabs Name
                     MapObject obj = new MapObject("finalObject21", Child.position.x, Child.position.y);
+                    map.items.Add(obj);
+                }  else if(MenuInGame.level == 23){
+                    //                             Prefabs Name
+                    MapObject obj = new MapObject("finalObject23", Child.position.x, Child.position.y);
                     map.items.Add(obj);
                 }  else {
                     //                             Prefabs Name
@@ -152,6 +160,13 @@ public class MapController : MonoBehaviour {
                 MapObject.transform.SetParent(transform);
             }
             if (item.Name=="finalObjectlv21"){
+                Vector3 position = new Vector3(item.X, item.Y, -2);
+                GameObject MapObject = Instantiate(obj);
+                MapObject.transform.localScale = obj.transform.localScale;
+                MapObject.transform.position = position;
+                MapObject.transform.SetParent(transform);
+            } 
+            if (item.Name=="finalObjectlv23"){
                 Vector3 position = new Vector3(item.X, item.Y, -2);
                 GameObject MapObject = Instantiate(obj);
                 MapObject.transform.localScale = obj.transform.localScale;
