@@ -10,11 +10,13 @@ public class Dirt : MonoBehaviour {
     public GameObject currentImage; 
     float particleLifeTime=100000000.0f;
     public bool flag = false;
-
+    private AudioSource audioSource;
+    public AudioClip dirtClip;
     void Start()
     {
         cam = GameObject.Find("GameCamera").GetComponent<Camera>();
         Tile = cam.orthographicSize / Camera.main.orthographicSize;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void TouchDes()
@@ -26,8 +28,12 @@ public class Dirt : MonoBehaviour {
                     touc = touc* Tile;
                     //if (colli.OverlapPoint(new Vector2(touc.x, touc.y)))
                     // .5f la ban kinh cua collider
-                    if (Mathf.Abs(touc.x - transform.position.x) <= .5f && Mathf.Abs(touc.y - transform.position.y) <= .5f)
-                        Destroy(gameObject);
+                    if (Mathf.Abs(touc.x - transform.position.x) <= .5f && Mathf.Abs(touc.y - transform.position.y) <= .5f){
+                       // Destroy(gameObject);
+                       audioSource.PlayOneShot(dirtClip);
+                    //    gameObject.SetActive(false);
+                        Destroy(gameObject,0.1f);
+                    }      
                 } 
     }
 
