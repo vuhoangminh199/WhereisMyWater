@@ -51,7 +51,7 @@ public class Dirt : MonoBehaviour {
         Debug.Log("SPF: "+ 1/Time.deltaTime);
         Vector2 particleScale=Vector2.one;
 		if (scaleValue <= 0) {
-						Destroy (gameObject);
+			Destroy (gameObject);
 		} else{
 			particleScale.x=scaleValue;
 			particleScale.y=scaleValue;

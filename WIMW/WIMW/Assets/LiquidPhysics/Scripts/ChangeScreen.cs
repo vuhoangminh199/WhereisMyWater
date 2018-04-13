@@ -22,11 +22,24 @@ public class ChangeScreen : MonoBehaviour {
 	
 	public bool flagCheckLv = false;
 
+	private AudioSource audioSource;
+
+    public AudioClip splashClip, subMenuClip;
+
+	void Start(){
+		audioSource = GetComponent<AudioSource>();
+		audioSource.clip = splashClip;
+		audioSource.Play();
+	}
+
 	public void ChangeScreenMenu(string sceneName) {
 		Application.LoadLevel(sceneName);
 	}
 
 	public void onPressPlayFirstScreen(){
+		audioSource.Stop();
+		audioSource.clip = subMenuClip;
+		audioSource.Play();
 		canvas_2.SetActive(true);
 		canvas_1.SetActive(false);
 		canvas_lv1.SetActive(false);
@@ -65,6 +78,9 @@ public class ChangeScreen : MonoBehaviour {
 		canvas_lv2.SetActive(false);
 		img_canvas_2_1.SetActive(false);
 		img_canvas_2_2.SetActive(false);
+		audioSource.Stop();
+		audioSource.clip = splashClip;
+		audioSource.Play();
 	}
 
 	public void onPressBack_CV3(){

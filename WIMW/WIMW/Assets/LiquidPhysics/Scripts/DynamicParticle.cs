@@ -9,15 +9,22 @@ public class DynamicParticle : MonoBehaviour {
 	public GameObject[] particleImages; //We need multiple particle images to reduce drawcalls
 	float GAS_FLOATABILITY=7.0f; //How fast does the gas goes up?
 	float particleLifeTime=1000000000.0f,startTime;//How much time before the particle scalesdown and dies	
+	private AudioSource audioSource;
+    public AudioClip gasClip;
 	void Awake(){ 
 		if (currentState == STATES.NONE)
 			SetState (STATES.WATER);
 	}
+
 	public bool checkWater(){
 		if(currentState == STATES.WATER){
 			return true;
 		}
 		return false;
+	}
+
+	void Start(){
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	//The definitios to each state
@@ -31,6 +38,7 @@ public class DynamicParticle : MonoBehaviour {
 					particleLifeTime=3/2.0f;	// Gas lives the time the other particles
 					gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 					gameObject.layer=LayerMask.NameToLayer("Gas");// To have a different collision layer than the other particles (so gas doesnt rises up the lava but still collides with the wolrd)
+					audioSource.PlayOneShot(gasClip);
 				break;					
 				case STATES.LAVA:
 					gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
@@ -49,7 +57,7 @@ public class DynamicParticle : MonoBehaviour {
 			}
 		}		
 	}
- 	 void Update () {
+ 	 void FixedUpdate () {
 		switch(currentState){
 			case STATES.WATER: //Water and lava got the same behaviour
 				MovementAnimation(); 

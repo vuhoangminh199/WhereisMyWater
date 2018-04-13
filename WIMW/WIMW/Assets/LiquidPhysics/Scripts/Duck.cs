@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Duck : MonoBehaviour {
 	public int checkDuck = 3;
+	private AudioSource audioSource;
+    public AudioClip duckClip;
 	// Use this for initialization
 	void Start () {
-		
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -24,6 +26,7 @@ public class Duck : MonoBehaviour {
     				 
 				} else {
 					 checkDuck --;
+					 audioSource.PlayOneShot(duckClip);
 					 Destroy(other.gameObject);
 				}
 		}
