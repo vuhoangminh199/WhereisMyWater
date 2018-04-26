@@ -55,7 +55,7 @@ public class ChangeScreen : MonoBehaviour {
 			canvas_2.SetActive(false);
 			canvas_1.SetActive(false);
 			canvas_lv1.SetActive(true);
-			canvas_lv2.SetActive(true);
+			canvas_lv2.SetActive(false);
 			img_canvas_2_1.SetActive(false);
 			img_canvas_2_2.SetActive(false);
 		} else if (lv == 2){
