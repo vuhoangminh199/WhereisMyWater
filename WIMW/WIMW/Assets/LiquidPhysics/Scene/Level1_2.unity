@@ -7658,50 +7658,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.638
-      objectReference: {fileID: 0}
-    - target: {fileID: 4184075988398906, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.50500655
-      objectReference: {fileID: 0}
-    - target: {fileID: 4184075988398906, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.44168
-      objectReference: {fileID: 0}
-    - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.15795846
-      objectReference: {fileID: 0}
-    - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 4889726947341796, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.40063754
-      objectReference: {fileID: 0}
-    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.015375614
-      objectReference: {fileID: 0}
-    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 8.610751
-      objectReference: {fileID: 0}
-    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -0.014810264
-      objectReference: {fileID: 0}
-    - target: {fileID: 61244467770653586, guid: fc0daba0cfdb0014e8b7f38bce96b1dd,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.63619435
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc0daba0cfdb0014e8b7f38bce96b1dd, type: 2}
   m_IsPrefabParent: 0

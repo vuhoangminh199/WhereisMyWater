@@ -68,11 +68,11 @@ public class MapController : MonoBehaviour {
                     map.items.Add(obj);
                 } else if(MenuInGame.level == 21){
                     //                             Prefabs Name
-                    MapObject obj = new MapObject("finalObject21", Child.position.x, Child.position.y);
+                    MapObject obj = new MapObject("finalObjectlv21", Child.position.x, Child.position.y);
                     map.items.Add(obj);
                 }  else if(MenuInGame.level == 23){
                     //                             Prefabs Name
-                    MapObject obj = new MapObject("finalObject23", Child.position.x, Child.position.y);
+                    MapObject obj = new MapObject("finalObjectlv23", Child.position.x, Child.position.y);
                     map.items.Add(obj);
                 }  else {
                     //                             Prefabs Name
@@ -166,7 +166,7 @@ public class MapController : MonoBehaviour {
                 MapObject.transform.position = position;
                 MapObject.transform.SetParent(transform);
             } 
-            if (item.Name=="finalObjectlv23"){
+            if (item.Name=="finalObject23"){
                 Vector3 position = new Vector3(item.X, item.Y, -2);
                 GameObject MapObject = Instantiate(obj);
                 MapObject.transform.localScale = obj.transform.localScale;
