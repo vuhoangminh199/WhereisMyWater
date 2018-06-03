@@ -7,9 +7,12 @@ public class Duck : MonoBehaviour {
 	public int checkDuck = 3;
 	private AudioSource audioSource;
     public AudioClip duckClip;
+    private SpriteRenderer renderer;
+    private float mColor = 1f;
 	// Use this for initialization
 	void Start () {
 		audioSource = GetComponent<AudioSource>();
+        renderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -23,10 +26,14 @@ public class Duck : MonoBehaviour {
 				if (checkDuck == 0) {
 					Destroy(gameObject);
 					MenuInGame.instance.changeDuckColor(1);
-    				 
-				} else {
+
+                } else {
+                        
 					 checkDuck --;
-					 audioSource.PlayOneShot(duckClip);
+                     if (checkDuck != 3) { 
+                     renderer.color = new Color(1f, 1f, 1f, mColor - .5f);
+                     }
+                     audioSource.PlayOneShot(duckClip);
 					 Destroy(other.gameObject);
 				}
 		}

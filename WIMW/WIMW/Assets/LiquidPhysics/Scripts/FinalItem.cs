@@ -18,15 +18,22 @@ public class FinalItem : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
-		if(other.collider.GetComponent<DynamicParticle>().checkWater() && other.gameObject.tag =="water"){ 
-			//Application.LoadLevel("sceneName");
+        bool flag = false;
+        if (other.collider.GetComponent<DynamicParticle>().checkWater() && other.gameObject.tag =="water"){
+            //Application.LoadLevel("sceneName");
 			if (countItemWater == 0) {
 				MenuInGame.instance.onGameOver();
 				audioSource.PlayOneShot(finalClip);
 				Debug.Log("gameover");
 			} else {
-				countItemWater --;
-				Destroy(other.gameObject);
+                if(!flag)
+                {
+                  flag = true;
+                  countItemWater--;
+                  Destroy(other.gameObject);
+                  flag = false;
+                }
+                				
 			}
 		}
 	}
