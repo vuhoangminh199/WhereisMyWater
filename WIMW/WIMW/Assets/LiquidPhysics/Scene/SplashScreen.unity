@@ -3539,7 +3539,7 @@ MonoBehaviour:
   btn_lv2_1: {fileID: 278750913}
   btn_lv2_2: {fileID: 1535340977}
   btn_lv2_3: {fileID: 1031799021}
-  btn_lv2_4: {fileID: 0}
+  btn_lv2_4: {fileID: 376842780}
   flagCheckLv: 0
   splashClip: {fileID: 8300000, guid: 4796736f6956245dba89b0937b5ad4c1, type: 3}
   subMenuClip: {fileID: 8300000, guid: 8bfdd03f543d642fe8721c1e67d7719c, type: 3}
