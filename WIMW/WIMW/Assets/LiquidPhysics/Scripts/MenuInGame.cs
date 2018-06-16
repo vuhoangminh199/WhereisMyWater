@@ -18,7 +18,8 @@ public class MenuInGame : MonoBehaviour {
     public static MenuInGame instance;
     public static int sum;
     public static int level;
-
+    public static int[] level1 = {0,0,0,0};
+    public static int[] level2 = {0,0,0,0};
     void Awake(){
 		_MakeSingleInstance();
 	}
@@ -63,14 +64,22 @@ public class MenuInGame : MonoBehaviour {
 	}
 
     public void changeDuckColor(int temp){
-        sum += temp;
-        if (sum == 1){
-            duckItem1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
-        } else if (sum == 2){
-            duckItem2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
-        } else if(sum == 3){
-            duckItem3.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
-        }
+            sum += temp;
+            if (sum == 1)
+            {
+                duckItem1.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
+            }
+            else if (sum == 2)
+            {
+                duckItem2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
+            }
+            else if (sum >= 3)
+            {
+                sum = 3;
+                duckItem3.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
+            }
+        
+        
     }
 
     public void onGameOver(){
@@ -94,8 +103,38 @@ public class MenuInGame : MonoBehaviour {
             duck_final_2.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
             duck_final_3.GetComponent<Image>().sprite = Resources.Load<Sprite>("Images/ducky");
         }
-       
-	}
+
+        if (level == 11)
+        {
+            level1[0] = sum;
+            Debug.Log(level1[0]);
+        }
+        else if (level == 12)
+        {
+            level1[1] = sum;
+        }
+        else if (level == 13)
+        {
+            level1[2] = sum;
+        }
+        else if (level == 14)
+        {
+            level1[3] = sum;
+        }
+        else if (level == 21)
+        {
+            level2[0] = sum;
+        }
+        else if (level == 22)
+        {
+            level2[1] = sum;
+        }
+        else if (level == 23)
+        {
+            level2[2] = sum;
+        }
+        
+    }
 
      void _MakeSingleInstance(){
 		if (instance != null){

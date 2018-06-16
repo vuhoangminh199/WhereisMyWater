@@ -583,8 +583,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -637,7 +638,7 @@ TextureImporter:
         serializedVersion: 2
         x: 282
         y: 1767
-        width: 280
+        width: 562
         height: 280
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -649,21 +650,7 @@ TextureImporter:
       name: ui_atlas-TabHD_2
       rect:
         serializedVersion: 2
-        x: 842
-        y: 1773
-        width: 285
-        height: 275
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 1, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ui_atlas-TabHD_3
-      rect:
-        serializedVersion: 2
-        x: 1406
+        x: 844
         y: 1767
         width: 280
         height: 280
@@ -674,27 +661,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_4
+      name: ui_atlas-TabHD_3
       rect:
         serializedVersion: 2
-        x: 1687
-        y: 1772
-        width: 281
-        height: 275
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 4, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ui_atlas-TabHD_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1277
-        width: 281
-        height: 489
+        x: 1289
+        y: 1561
+        width: 194
+        height: 207
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -702,7 +675,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_6
+      name: ui_atlas-TabHD_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1276
+        width: 198
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ui_atlas-TabHD_5
       rect:
         serializedVersion: 2
         x: 282
@@ -716,7 +703,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_7
+      name: ui_atlas-TabHD_6
       rect:
         serializedVersion: 2
         x: 483
@@ -730,13 +717,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+      name: ui_atlas-TabHD_7
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1556
+        width: 200
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
       name: ui_atlas-TabHD_8
       rect:
         serializedVersion: 2
-        x: 1488
-        y: 1558
-        width: 200
-        height: 208
+        x: 483
+        y: 1496
+        width: 33
+        height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,10 +748,10 @@ TextureImporter:
       name: ui_atlas-TabHD_9
       rect:
         serializedVersion: 2
-        x: 483
-        y: 1494
-        width: 32
-        height: 61
+        x: 0
+        y: 1277
+        width: 201
+        height: 208
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -761,10 +762,10 @@ TextureImporter:
       name: ui_atlas-TabHD_10
       rect:
         serializedVersion: 2
-        x: 403
+        x: 202
         y: 1277
         width: 200
-        height: 211
+        height: 208
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -773,6 +774,20 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: ui_atlas-TabHD_11
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1277
+        width: 200
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ui_atlas-TabHD_12
       rect:
         serializedVersion: 2
         x: 606
@@ -786,7 +801,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_12
+      name: ui_atlas-TabHD_13
       rect:
         serializedVersion: 2
         x: 783
@@ -800,13 +815,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_13
+      name: ui_atlas-TabHD_14
       rect:
         serializedVersion: 2
         x: 950
-        y: 1310
+        y: 1308
         width: 512
-        height: 175
+        height: 177
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,7 +829,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_14
+      name: ui_atlas-TabHD_15
       rect:
         serializedVersion: 2
         x: 1463
@@ -828,7 +843,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_15
+      name: ui_atlas-TabHD_16
       rect:
         serializedVersion: 2
         x: 0
@@ -842,7 +857,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_16
+      name: ui_atlas-TabHD_17
       rect:
         serializedVersion: 2
         x: 170
@@ -856,7 +871,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_17
+      name: ui_atlas-TabHD_18
       rect:
         serializedVersion: 2
         x: 247
@@ -870,10 +885,10 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_18
+      name: ui_atlas-TabHD_19
       rect:
         serializedVersion: 2
-        x: 395
+        x: 403
         y: 1108
         width: 1200
         height: 168
@@ -884,27 +899,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_19
-      rect:
-        serializedVersion: 2
-        x: 1807
-        y: 1128
-        width: 194
-        height: 151
-      alignment: 9
-      pivot: {x: 0.48344532, y: 0.45095825}
-      border: {x: 11, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: ui_atlas-TabHD_20
       rect:
         serializedVersion: 2
-        x: 4
-        y: 959
-        width: 140
-        height: 136
+        x: 1604
+        y: 1116
+        width: 200
+        height: 148
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -915,10 +916,10 @@ TextureImporter:
       name: ui_atlas-TabHD_21
       rect:
         serializedVersion: 2
-        x: 144
-        y: 984
-        width: 96
-        height: 92
+        x: 1805
+        y: 1116
+        width: 200
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -929,10 +930,10 @@ TextureImporter:
       name: ui_atlas-TabHD_22
       rect:
         serializedVersion: 2
-        x: 286
-        y: 991
-        width: 1560
-        height: 108
+        x: 4
+        y: 959
+        width: 138
+        height: 137
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,10 +944,10 @@ TextureImporter:
       name: ui_atlas-TabHD_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 846
-        width: 237
-        height: 108
+        x: 146
+        y: 984
+        width: 92
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -955,6 +956,48 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: ui_atlas-TabHD_24
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1023
+        width: 1560
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ui_atlas-TabHD_25
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 991
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ui_atlas-TabHD_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 846
+        width: 236
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ui_atlas-TabHD_27
       rect:
         serializedVersion: 2
         x: 238
@@ -968,13 +1011,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_25
+      name: ui_atlas-TabHD_28
       rect:
         serializedVersion: 2
-        x: 1286
-        y: 1562
-        width: 203
-        height: 203
+        x: 1486
+        y: 1559
+        width: 200
+        height: 204
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,15 +1025,15 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ui_atlas-TabHD_26
+      name: ui_atlas-TabHD_29
       rect:
         serializedVersion: 2
-        x: 1846
-        y: 990
-        width: 111
-        height: 108
+        x: 1692
+        y: 1559
+        width: 199
+        height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

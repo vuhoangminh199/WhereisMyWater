@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <items>
-    <item name="Duck" X="-0.0182327032" Y="0.9463427" />
+    <item name="Duck" X="-0.0182327032" Y="0.87" />
     <item name="Duck" X="-0.0182327032" Y="0.133000016" />
     <item name="Duck" X="-0.0182327032" Y="-0.706" />
     <item name="finalObject" X="0.00999999" Y="-2.1046977" />

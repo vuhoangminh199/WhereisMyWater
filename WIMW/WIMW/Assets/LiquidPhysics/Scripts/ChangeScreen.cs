@@ -12,13 +12,25 @@ public class ChangeScreen : MonoBehaviour {
 
 	public GameObject canvas_lv2;
 	
-	public GameObject img_canvas_2_1;
-	
-	public GameObject img_canvas_2_2;
-
 	public GameObject title_canvas_3;
 
-	public static ChangeScreen instance;
+    public GameObject btn_lv1_1;
+
+    public GameObject btn_lv1_2;
+
+    public GameObject btn_lv1_3;
+
+    public GameObject btn_lv1_4;
+
+    public GameObject btn_lv2_1;
+
+    public GameObject btn_lv2_2;
+
+    public GameObject btn_lv2_3;
+
+    public GameObject btn_lv2_4;
+
+    public static ChangeScreen instance;
 	
 	public bool flagCheckLv = false;
 
@@ -44,29 +56,160 @@ public class ChangeScreen : MonoBehaviour {
 		canvas_1.SetActive(false);
 		canvas_lv1.SetActive(false);
 		canvas_lv2.SetActive(false);
-		img_canvas_2_1.SetActive(true);
-		img_canvas_2_2.SetActive(true);
 	}
 
 	public void onPressLv(int lv){
 		if (lv == 1) {
-			title_canvas_3.GetComponent<UnityEngine.UI.Text>().text =  "\"Lever 1\"";
+            if (MenuInGame.level1[0] == 0)
+            {
+                btn_lv1_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+               
+            }
+            if (MenuInGame.level1[1] == 0)
+            {
+                btn_lv1_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+            }
+            if (MenuInGame.level1[2] == 0)
+            {
+                btn_lv1_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+            }
+            if (MenuInGame.level1[3] == 0)
+            {
+                btn_lv1_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+            }
+
+            if (MenuInGame.level1[0] == 1)
+            {
+                btn_lv1_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+            if (MenuInGame.level1[1] == 1)
+            {
+                btn_lv1_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+            if (MenuInGame.level1[2] == 1)
+            {
+                btn_lv1_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+            if (MenuInGame.level1[3] == 1)
+            {
+                btn_lv1_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+
+            if (MenuInGame.level1[0] == 2)
+            {
+                btn_lv1_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+            if (MenuInGame.level1[1] == 2)
+            {
+                btn_lv1_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+            if (MenuInGame.level1[2] == 2)
+            {
+                btn_lv1_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+            if (MenuInGame.level1[3] == 2)
+            {
+                btn_lv1_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+
+            if (MenuInGame.level1[0] == 3)
+            {
+                btn_lv1_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            if (MenuInGame.level1[1] == 3)
+            {
+                btn_lv1_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            if (MenuInGame.level1[2] == 3)
+            {
+                btn_lv1_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            if (MenuInGame.level1[3] == 3)
+            {
+                btn_lv1_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+
+            title_canvas_3.GetComponent<UnityEngine.UI.Text>().text =  "\"Level 1\"";
 			flagCheckLv = false;
 			canvas_2.SetActive(false);
 			canvas_1.SetActive(false);
 			canvas_lv1.SetActive(true);
 			canvas_lv2.SetActive(false);
-			img_canvas_2_1.SetActive(false);
-			img_canvas_2_2.SetActive(false);
 		} else if (lv == 2){
-			title_canvas_3.GetComponent<UnityEngine.UI.Text>().text = "\"Lever 2\"";
+            if (MenuInGame.level2[0] == 0)
+            {
+                btn_lv2_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+
+            }
+            if (MenuInGame.level2[1] == 0)
+            {
+                btn_lv2_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+            }
+            if (MenuInGame.level2[2] == 0)
+            {
+                btn_lv2_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+            }
+            if (MenuInGame.level2[3] == 0)
+            {
+                btn_lv2_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[3];
+            }
+
+            if (MenuInGame.level2[0] == 1)
+            {
+                btn_lv2_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+            if (MenuInGame.level2[1] == 1)
+            {
+                btn_lv2_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+            if (MenuInGame.level2[2] == 1)
+            {
+                btn_lv2_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+            if (MenuInGame.level2[3] == 1)
+            {
+                btn_lv2_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[2];
+            }
+
+            if (MenuInGame.level2[0] == 2)
+            {
+                btn_lv2_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+            if (MenuInGame.level2[1] == 2)
+            {
+                btn_lv2_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+            if (MenuInGame.level2[2] == 2)
+            {
+                btn_lv2_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+            if (MenuInGame.level2[3] == 2)
+            {
+                btn_lv2_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[1];
+            }
+
+            if (MenuInGame.level2[0] == 3)
+            {
+                btn_lv2_1.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            if (MenuInGame.level2[1] == 3)
+            {
+                btn_lv2_2.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            if (MenuInGame.level2[2] == 3)
+            {
+                btn_lv2_3.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            if (MenuInGame.level2[3] == 3)
+            {
+                btn_lv2_4.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("Images/ui")[0];
+            }
+            title_canvas_3.GetComponent<UnityEngine.UI.Text>().text = "\"Level 2\"";
 			flagCheckLv = true;
 			canvas_2.SetActive(false);
 			canvas_1.SetActive(false);
 			canvas_lv2.SetActive(true);
 			canvas_lv1.SetActive(false);
-			img_canvas_2_1.SetActive(false);
-			img_canvas_2_2.SetActive(false);
 		}
 		
 	}
@@ -76,8 +219,6 @@ public class ChangeScreen : MonoBehaviour {
 		canvas_1.SetActive(true);
 		canvas_lv1.SetActive(false);
 		canvas_lv2.SetActive(false);
-		img_canvas_2_1.SetActive(false);
-		img_canvas_2_2.SetActive(false);
 		audioSource.Stop();
 		audioSource.clip = splashClip;
 		audioSource.Play();
@@ -88,8 +229,6 @@ public class ChangeScreen : MonoBehaviour {
 		canvas_1.SetActive(false);
 		canvas_lv1.SetActive(false);
 		canvas_lv2.SetActive(false);
-		img_canvas_2_1.SetActive(true);
-		img_canvas_2_2.SetActive(true);	
 	}
 
 	public void onPressLv1(int lv){

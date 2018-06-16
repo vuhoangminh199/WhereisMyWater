@@ -78,7 +78,7 @@ public class DynamicParticle : MonoBehaviour {
 	}
 	// This scales the particle image acording to its velocity, so it looks like its deformable... but its not ;)
 	void MovementAnimation(){
-		Vector3 movementScale=new Vector3(1.0f,1.0f,1.0f);//Tamaño de textura no de metaball			
+		Vector3 movementScale=new Vector3(1.0f,1.0f,1.0f);// metaball			
 		 movementScale.x+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.x)/30.0f;
 		 movementScale.z+=Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y)/30.0f;
 		movementScale.y=1.0f;		
@@ -105,7 +105,8 @@ public class DynamicParticle : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if(currentState==STATES.WATER && other.gameObject.tag =="DynamicParticle"){ 
 			if(other.collider.GetComponent<DynamicParticle>().currentState==STATES.LAVA){
-				SetState(STATES.GAS);
+               
+                SetState(STATES.GAS);
 				//Debug.Log(other.collider.GetComponent<DynamicParticle>().currentState)
 			}
 		}
